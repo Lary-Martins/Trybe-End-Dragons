@@ -4,7 +4,7 @@ class Orc extends Race {
   private _maxLifePoints = 74;
   private static _instaces = 0;
 
-  static creatRacesInstances(): number {
+  static createdRacesInstances(): number {
     this._instaces += 1;
     return this._instaces;
   }

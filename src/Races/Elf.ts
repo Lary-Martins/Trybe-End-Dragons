@@ -4,7 +4,7 @@ class Elf extends Race {
   private _maxLifePoints = 99;
   private static _instaces = 0;
 
-  static creatRacesInstances(): number {
+  static createdRacesInstances(): number {
     this._instaces += 1;
     return this._instaces;
   }

@@ -15,7 +15,7 @@ abstract class Race {
     return this._dexterity;
   }
 
-  static creatRacesInstances():number {
+  static createdRacesInstances():number {
     const erro = new Error('Not implemented');
     throw erro;
   }
