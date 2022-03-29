@@ -53,3 +53,7 @@ class Character implements Fighter {
 
     return this._lifePoints;
   }
+
+  attack(enemy: Fighter): void {
+    enemy.receiveDamage(this._strength);
+  }
