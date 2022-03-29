@@ -25,3 +25,9 @@ class Mosnter implements SimpleFighter {
     return this._lifePoints;
   }
 
+  attack(enyme: SimpleFighter): void {
+    enyme.receiveDamage(this._strength);
+  }
+}
+
+export default Mosnter;
