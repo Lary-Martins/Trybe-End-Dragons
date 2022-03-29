@@ -1,4 +1,4 @@
-import { SimpleFighter } from './Fighter';
+import Fighter, { SimpleFighter } from './Fighter';
 
 class Monster implements SimpleFighter {
   private _lifePoints: number;
@@ -25,7 +25,7 @@ class Monster implements SimpleFighter {
     return this._lifePoints;
   }
 
-  attack(enyme: SimpleFighter): void {
+  attack(enyme: Fighter | SimpleFighter): void {
     enyme.receiveDamage(this._strength);
   }
 }
