@@ -11,3 +11,27 @@ class PVE extends Battle {
     this._monsters = monsters;
   }
 
+  fight(): number {
+    let continueFight = true;
+
+    while (continueFight) {
+      this._monsters.forEach(
+        (monster: SimpleFighter | Fighter) => this._player.attack(monster),
+      );
+      if (this._monsters.every(
+        (monster: SimpleFighter | Fighter) => monster.lifePoints === -1,
+      )) {
+        continueFight = false;
+        return 1;
+      }
+      this._monsters.forEach((monster) => monster.attack(this._player));
+      if (this.player.lifePoints === -1) {
+        continueFight = false;
+        return -1;
+      }
+    }
+    return 0;
+  }
+}
+
+export default PVE;
