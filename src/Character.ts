@@ -71,3 +71,12 @@ class Character implements Fighter {
     this._defense += getRandomInt(1, 10);
     this._energy.amount = 10;
   }
+
+  special(enemy: Fighter): void {
+    if (enemy.defense < this._strength) {
+      enemy.receiveDamage(this._strength);
+    }
+    
+    const doubleDamage = this._strength * 2;
+    enemy.receiveDamage(doubleDamage);
+  }
