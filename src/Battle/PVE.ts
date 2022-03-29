@@ -12,25 +12,19 @@ class PVE extends Battle {
   }
 
   fight(): number {
-    let continueFight = true;
-
-    while (continueFight) {
-      this._monsters.forEach(
-        (monster: SimpleFighter | Fighter) => this._player.attack(monster),
-      );
-      if (this._monsters.every(
-        (monster: SimpleFighter | Fighter) => monster.lifePoints === -1,
-      )) {
-        continueFight = false;
-        return 1;
-      }
-      this._monsters.forEach((monster) => monster.attack(this._player));
-      if (this.player.lifePoints === -1) {
-        continueFight = false;
-        return -1;
-      }
+    this._monsters.forEach(
+      (monster: SimpleFighter | Fighter) => this._player.attack(monster),
+    );
+    if (this._monsters.every(
+      (monster: SimpleFighter | Fighter) => monster.lifePoints === -1,
+    )) {
+      return -1;
     }
-    return 0;
+    this._monsters.forEach((monster) => monster.attack(this._player));
+    if (this.player.lifePoints === -1) {
+      return 1;
+    }
+    return this._player.lifePoints === -1 ? 1 : -1;
   }
 }
 
