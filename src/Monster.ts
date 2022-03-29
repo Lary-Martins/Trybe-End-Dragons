@@ -11,3 +11,17 @@ class Mosnter implements SimpleFighter {
 
   get lifePoints(): number { return this._lifePoints; }
   get strength(): number { return this._strength; }
+
+  receiveDamage(attackPoints: number): number {
+    const damage = this._lifePoints - attackPoints;
+
+    if (this._lifePoints <= damage) {
+      this._lifePoints = -1;
+    }
+    if (damage > 0) {
+      this._lifePoints = damage;
+    }
+
+    return this._lifePoints;
+  }
+
