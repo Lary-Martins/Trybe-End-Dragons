@@ -80,3 +80,6 @@ class Character implements Fighter {
     const doubleDamage = this._strength * 2;
     enemy.receiveDamage(doubleDamage);
   }
+}
+
+export default Character;
