@@ -1,4 +1,4 @@
-import Battle, { PVP } from './Battle';
+import Battle, { PVE, PVP } from './Battle';
 import Character from './Character';
 import Dragon from './Dragon';
 import Monster from './Monster';
@@ -16,10 +16,8 @@ const monster1: Monster = new Monster();
 const monster2: Monster = new Dragon();
 
 const pvp: PVP = new PVP(player2, player3);
-// o método fight da classe PVE, esta em loop infinito 
-// e isso n permite que ela seja instanciada e usada de maneira a passar nos testes
 
-// const pve: PVE = new PVE(player1, [monster1, monster2]);
+const pve: PVE = new PVE(player1, [monster1, monster2]);
 
 const runBattles = (battles: Battle[]): void => {
   battles.forEach((battle) => {
@@ -27,4 +25,4 @@ const runBattles = (battles: Battle[]): void => {
   });
 };
 
-export { player1, player2, player3, monster1, monster2, pvp, runBattles };
+export { player1, player2, player3, monster1, monster2, pvp, pve, runBattles };
