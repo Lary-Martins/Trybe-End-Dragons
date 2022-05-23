@@ -2,10 +2,9 @@
 ---
 # Sumário
 
-- [Habilidades](#habilidades)
-- [O que será desenvolvido](#O que será desenvolvido)
 - [Contextualizando](#contextualizando)
-- [Como rodar o projeto](#como rodar o projeto)
+- [Habilidades](#habilidades)
+- [Como rodar o projeto](#como-rodar-o-projeto)
 - [Requisitos do projeto](#requisitos-do-projeto)
   - [Requisitos Obrigatórios](#requisitos-obrigatórios)
     - [1 - Crie a classe `Race`](#1---crie-a-classe-race)
@@ -24,24 +23,6 @@
     - [13 - Crie objetos no arquivo `index`](#13---crie-objetos-no-arquivo-index)
 ---
 
-# Habilidades
-
-Neste projeto, fui capaz de:
-
-- Exercitar meu conhecimento dos pilares da `Programação Orientada a Objetos`: `Herança`, `Abstração`, `Encapsulamento` e `Polimorfismo`;
-- Exercitar a utilização de `Composição`;
-- Exercitar a criação e utilização de `Interfaces`;
-- Implementar, em `TypeScript`: `Classes`, `Instâncias`, `Atributos`, `Métodos` e `Objetos`;
-- Exercitar o conhecimento por meio da aplicação dos princípios `SOLID`.
-
----
-
-## O que será desenvolvido
-
-Para este projeto, você deverá aplicar os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos `RPG` (_Role Playing Game_).
-
----
-
 # Contextualizando
 
 No universo de Trybers and Dragons - T&D, quase todos os seres que andam por estas terras pertencem a uma **raça** definida.
@@ -57,6 +38,17 @@ Agora, cabe a você, nobre ~~dev~~, explorar essas terras e cumprir as quests qu
 **_Now, follow ~~the blind~~ the dungeon master!_**
 
 ---
+# Habilidades
+
+Neste projeto, fui capaz de:
+
+- Exercitar meu conhecimento dos pilares da `Programação Orientada a Objetos`: `Herança`, `Abstração`, `Encapsulamento` e `Polimorfismo`;
+- Exercitar a utilização de `Composição`;
+- Exercitar a criação e utilização de `Interfaces`;
+- Implementar, em `TypeScript`: `Classes`, `Instâncias`, `Atributos`, `Métodos` e `Objetos`;
+- Exercitar o conhecimento por meio da aplicação dos princípios `SOLID`.
+
+---
 
 # Como rodar o projeto
 
@@ -70,6 +62,8 @@ Agora, cabe a você, nobre ~~dev~~, explorar essas terras e cumprir as quests qu
 
 `npm install` ou `yarn install`
 - Após esses passos, poderá criar seus personagens indo até o arquivo `App.ts`.
+
+---
 
 # Requisitos do projeto
 
