@@ -61,7 +61,7 @@ Neste projeto, fui capaz de:
 - Em seguida, instale as dependências do projeto, para isso execute o comando abaixo
 
 `npm install` ou `yarn install`
-- Após esses passos, poderá criar seus personagens indo até o arquivo `index.ts`.
+- Após esses passos, poderá criar seus personagens indo até o arquivo `index.ts`, lá incontrará todas as instruções.
 
 ---
 
