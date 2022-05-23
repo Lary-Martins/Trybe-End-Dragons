@@ -1,32 +1,11 @@
-## Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
-
 # Boas vindas ao repositório do projeto Trybers and Dragons!
-
-Você já usa o _GitHub_ diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Tenha atenção a cada passo, e se tiver qualquer dúvida, nos envie por Slack! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
 ---
-
 # Sumário
 
-- [Boas vindas ao repositório do projeto Trybers and Dragons!](#boas-vindas-ao-repositório-do-projeto-trybers-and-dragons)
-- [Sumário](#sumário)
 - [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Desenvolvimento](#desenvolvimento)
-  - [Data de Entrega](#data-de-entrega)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-- [Como desenvolver](#como-desenvolver)
-  - [Linter](#linter)
-  - [Testes](#testes)
-    - [Dica: desativando testes](#dica-desativando-testes)
+- [O que será desenvolvido](#O que será desenvolvido)
 - [Contextualizando](#contextualizando)
+- [Como rodar o projeto](#como rodar o projeto)
 - [Requisitos do projeto](#requisitos-do-projeto)
   - [Requisitos Obrigatórios](#requisitos-obrigatórios)
     - [1 - Crie a classe `Race`](#1---crie-a-classe-race)
@@ -43,17 +22,13 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [11 - Criar a classe `PVE`](#11---criar-a-classe-pve)
     - [12 - Crie a classe `Dragon`](#12---crie-a-classe-dragon)
     - [13 - Crie objetos no arquivo `index`](#13---crie-objetos-no-arquivo-index)
-  - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
-- [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos finais](#avisos-finais)
-
 ---
 
 # Habilidades
 
-Neste projeto, você será capaz de:
+Neste projeto, fui capaz de:
 
-- Exercitar o conhecimento dos pilares da `Programação Orientada a Objetos`: `Herança`, `Abstração`, `Encapsulamento` e `Polimorfismo`;
+- Exercitar meu conhecimento dos pilares da `Programação Orientada a Objetos`: `Herança`, `Abstração`, `Encapsulamento` e `Polimorfismo`;
 - Exercitar a utilização de `Composição`;
 - Exercitar a criação e utilização de `Interfaces`;
 - Implementar, em `TypeScript`: `Classes`, `Instâncias`, `Atributos`, `Métodos` e `Objetos`;
@@ -61,160 +36,9 @@ Neste projeto, você será capaz de:
 
 ---
 
-# Entregáveis
-
-Para entregar o seu projeto, você deverá criar um _Pull Request_ neste repositório.
-
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/course/fundamentals/git) sempre que precisar!
-
----
-
-## O que deverá ser desenvolvido
+## O que será desenvolvido
 
 Para este projeto, você deverá aplicar os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos `RPG` (_Role Playing Game_).
-
----
-
-## Desenvolvimento
-
-⚠️ **Dicas Importantes** ⚠️:
-
-- Durante a execução dos testes, serão criados arquivos `.js` no repositório do projeto
-  - Ao final da execução de cada teste é rodado um script que apaga todos os arquivos `.js` do repositório (com exceção dos que já vão com o projeto)
-  - O script utiliza o binário `find` do linux
-  - Em ambiente Windows, o `find` utilizado é o que vem na instalação do git (`C:/Program Files/Git/usr/bin/find.exe`)
-
----
-
-## Data de Entrega
-  - Serão `2` dias de projeto.
-  - Data de entrega para avaliação final do projeto: `18/03/2022 14:00`.
-
----
-
-# Instruções para entregar seu projeto
-
-## Antes de começar a desenvolver
-
-1. Clone o repositório
-
-- `git clone https://github.com/tryber/sd-014-c-project-trybers-and-dragons.git`.
-- Entre na pasta do repositório que você acabou de clonar:
-  - `cd sd-014-c-project-s-and-dragons`
-
-2. Instale as dependências
-
-- `npm install`
-
-3. Crie uma branch a partir da branch `main`
-
-- Verifique que você está na branch `main`
-  - Exemplo: `git branch`
-- Se não estiver, mude para a branch `main`
-  - Exemplo: `git checkout main`
-- Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-  - Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-  - Exemplo: `git checkout -b joaozinho-sd-014-c-project-s-and-dragons`
-
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-
-- Verifique que as mudanças ainda não estão no _stage_
-  - Exemplo: `git status` (deve aparecer listada a pasta _joaozinho_ em vermelho)
-- Adicione o novo arquivo ao _stage_ do Git
-    - Exemplo:
-      - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-      - `git status` (deve aparecer listado o arquivo _joaozinho/README.md_ em verde)
-- Faça o `commit` inicial
-    - Exemplo:
-      - `git commit -m 'iniciando o projeto x'` (fazendo o primeiro commit)
-      - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
-
-- Usando o exemplo anterior: `git push -u origin joaozinho-sd-014-c-project-s-and-dragons`
-
-6. Crie um novo `Pull Request` _(PR)_
-
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-014-c-project-s-and-dragons/pulls)
-- Clique no botão verde _"New pull request"_
-- Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-- Clique no botão verde _"Create pull request"_
-- Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-- **Não se preocupe em preencher mais nada por enquanto!**
-- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-014-c-project-s-and-dragons/pulls) e confira que o seu _Pull Request_ está criado
-
----
-
-## Durante o desenvolvimento
-
-- Faça `commits` das alterações que você fizer no código regularmente.
-
-- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto.
-
-- Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
-
-# Como desenvolver
-
-**⚠️ Leia-os atentamente e siga à risca o que for pedido. ⚠️**
-
-**👀 Observações importantes:**
-
-- O projeto deve ser desenvolvido na ordem dos requisitos (do 1 ao 13);
-
-- As importações e exportações dos arquivos devem ser feitas exatamente como estão sendo solicitadas e os nomes dos arquivos/diretórios também devem seguir à risca o que é pedido no `README.md`;
-
-- Sempre que encontrar o símbolo :warning: pare e leia com muita atenção o que é pedido;
-
-- Se atente ao vocabulário usado no projeto, ele é super importante para te ajudar na hora de suas pesquisas. Qualquer dúvida procure a pessoa instrutora de sua turma no `Slack` ou nas `mentorias`;
-
-- Se atente às convenções, isso tem ligação direta com as boas práticas de código e de comunicação entre equipes;
-
-- Ao longo do projeto algumas refatorações serão necessárias para que ele funcione como é esperado;
-
-- Dentro do diretório `src/Battle` existe um arquivo `Battle.ts` com uma classe abstrata de batalha criada. Os arquivos deste diretório estão comentados e podem ser usados de exemplo para a construção do projeto. Durante a execução do projeto, no **requisito 6 - Crie a interface `Fighter`**, será pedido para você descomentar os arquivos. Só descomente quando chegar lá, senão terá erro de lint.
-
-- Se atente ao padrão do projeto, onde cada diretório possui um arquivo `index.ts` exportando as informações necessárias, tomando cuidado para não ter problemas na execução dos testes.
-
----
-
-## Linter
-
-Usaremos o [ESLint](https://eslint.org/) para fazer a análise estática do seu código.
-
-Este projeto já vem com as dependências relacionadas ao _linter_ configuradas no arquivos `package.json`.
-
-Para poder rodar os `ESLint` em um projeto, basta executar o comando `npm install` dentro do projeto e depois `npm run lint`. Se a análise do `ESLint` encontrar problemas no seu código, tais problemas serão mostrados no seu terminal. Se não houver problema no seu código, nada será impresso no seu terminal.
-
-⚠ PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS. ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO! ⚠
-
-Você pode também instalar o plugin do `ESLint` no `VSCode`, bastar ir em _extensions_ e baixar o [plugin `ESLint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
-
-## Testes
-
-Para executar os testes localmente, digite no terminal o comando `npm test`.
-
-### Dica: desativando testes
-
-Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `describe`. Como o nome indica, esta função "pula" um teste:
-
-```typescript
-describe.skip('...', () => {})
-```
-
-Uma estratégia é pular todos os testes no início e ir implementando um teste de cada vez, removendo dele a função `skip`.
-
-<!-- ![Testando um arquivo específico](./public/skip-tests.jpeg) -->
-
-⚠️ Lembre-se de não entregar o projeto com nenhum teste ignorado. **Testes ignorados serão tratados como testes falhando**. ⚠️
-
-⚠️ **Não apague, em hipótese alguma, qualquer teste ou arquivo deste repositório**. ⚠️
 
 ---
 
@@ -233,6 +57,19 @@ Agora, cabe a você, nobre ~~dev~~, explorar essas terras e cumprir as quests qu
 **_Now, follow ~~the blind~~ the dungeon master!_**
 
 ---
+
+# Como rodar o projeto
+
+- Primeiro clone o projeto, para isso execute o comando abaixo
+
+`git clone git@github.com:Lary-Martins/trybe-end-dragons.git`
+- Em seguida, acesse a pasta do projeto, para isso execute o comando abaixo
+
+`cd trybe-end-dragons/`
+- Em seguida, instale as dependências do projeto, para isso execute o comando abaixo
+
+`npm install` ou `yarn install`
+- Após esses passos, poderá criar seus personagens indo até o arquivo `App.ts`.
 
 # Requisitos do projeto
 
@@ -890,37 +727,3 @@ Algumas dicas se fazem necessárias para completar sua última missão no mundo 
   - Existe um objeto do tipo `PVE` (com o `Character` `player1` e com os `Monsters` `monster1` e `monster2`), exportado no arquivo `index` como `pve` e nele *NÃO* foi executado o método `pve.fight`;
   - Existe uma função chamada `runBattles`, que recebe um `array de Battles` e chama em seu interior o método `battle.fight`;
 </details>
-
----
-
-## Depois de terminar o desenvolvimento (opcional)
-
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
-
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
----
-
-# Revisando um pull request
-
-Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
-#VQV
-
----
-
-# Avisos finais
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
-
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no _README_. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
